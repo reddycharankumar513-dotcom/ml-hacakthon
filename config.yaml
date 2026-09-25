@@ -1,0 +1,76 @@
+# Competition Config for Business Entity Resolution
+data:
+  raw_dir: "C:/Users/chara/Desktop/ml hackathon"
+  alt_raw_dir: "dataset"
+  train_source1: "train_source1.tsv"
+  train_source2: "train_source2.tsv"
+  train_source3: "train_source3.tsv"
+  ground_truth: "train_ground_truth.tsv"
+  test_source1: "test_source1.tsv"
+  test_source2: "test_source2.tsv"
+  test_source3: "test_source3.tsv"
+  sample_size: null  # null for full run, or integer (e.g. 50000) for fast dev/validation
+
+output:
+  dir: "output"
+  matching_results: "matching_results.tsv"
+  candidate_pairs: "candidate_pairs.tsv"
+
+artifacts:
+  models_dir: "artifacts/models"
+  metrics_dir: "artifacts/metrics"
+  reports_dir: "artifacts/reports"
+  cache_dir: "artifacts/cache"
+
+model:
+  type: "lightgbm" # lightgbm or xgboost
+  random_seed: 42
+  n_estimators: 300
+  learning_rate: 0.05
+  num_leaves: 63
+  max_depth: 8
+  subsample: 0.8
+  colsample_bytree: 0.8
+  class_weight: "balanced"
+  n_jobs: -1
+
+validation:
+  test_size: 0.2
+  random_seed: 42
+
+blocking:
+  max_candidates_per_entity: 100
+  tfidf_min_df: 2
+  tfidf_max_features: 50000
+  ngram_range: [2, 4]
+  top_k_tfidf: 30
+  top_k_address_tfidf: 20
+  enable_ann: false
+
+training_pairs:
+  easy_negative_ratio: 2.0
+  hard_negative_ratio: 3.0
+  max_negatives_per_positive: 10
+
+threshold:
+  min_val: 0.1
+  max_val: 0.95
+  step: 0.02
+  default_threshold: 0.65
+
+singleton:
+  confidence_threshold: 0.35
+  margin_threshold: 0.15
+
+decision:
+  high_confidence_threshold: 0.80
+  medium_confidence_threshold: 0.55
+  low_confidence_threshold: 0.35
+
+graph:
+  enabled: true
+  min_edge_probability: 0.90
+  max_component_size: 10
+
+logging:
+  level: "INFO"

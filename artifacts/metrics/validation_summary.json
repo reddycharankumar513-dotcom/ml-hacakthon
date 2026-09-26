@@ -1,8 +1,8 @@
 {
-  "candidate_recall": 0.002937449602580348,
-  "validation_macro_f0_5": 0.07070039682539682,
-  "validation_precision": 0.073,
-  "validation_recall": 0.06848333333333334,
+  "candidate_recall": 0.0005686664771111743,
+  "validation_macro_f0_5": 0.075,
+  "validation_precision": 0.075,
+  "validation_recall": 0.075,
   "singleton_accuracy": 1.0,
   "optimal_threshold": 0.1
 }

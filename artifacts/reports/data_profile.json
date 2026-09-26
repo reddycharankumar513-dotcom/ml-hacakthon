@@ -1,7 +1,7 @@
 {
   "s1": {
     "source_name": "s1",
-    "n_rows": 5000,
+    "n_rows": 1000,
     "n_cols": 4,
     "columns": [
       "entity_id",
@@ -15,7 +15,7 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 5000,
+        "unique_count": 1000,
         "duplicate_count": 0
       },
       "business_name": {
@@ -23,15 +23,15 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 4963,
-        "duplicate_count": 37
+        "unique_count": 1000,
+        "duplicate_count": 0
       },
       "business_address": {
         "dtype": "str",
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 5000,
+        "unique_count": 1000,
         "duplicate_count": 0
       },
       "country": {
@@ -40,33 +40,33 @@
         "empty_string_count": 0,
         "whitespace_only_count": 0,
         "unique_count": 2,
-        "duplicate_count": 4998
+        "duplicate_count": 998
       }
     },
     "country_distribution": {
-      "US": 3025,
-      "India": 1975
+      "US": 595,
+      "India": 405
     },
     "name_length_stats": {
-      "mean": 24.0292,
-      "min": 4,
-      "max": 70,
-      "p50": 24.0,
-      "p95": 37.0
+      "mean": 23.877,
+      "min": 6,
+      "max": 61,
+      "p50": 23.0,
+      "p95": 37.049999999999955
     },
     "address_length_stats": {
-      "mean": 51.7936,
+      "mean": 52.745,
       "min": 17,
-      "max": 185,
-      "p50": 40.0,
-      "p95": 103.0
+      "max": 168,
+      "p50": 41.0,
+      "p95": 107.04999999999995
     },
     "top_repeated_names": {
-      "life projects private limited": 3,
-      "horizon llc": 2,
-      "eye group": 2,
-      "womens health care": 2,
-      "midwest coalition": 2
+      "orelees barbershop": 1,
+      "prime money": 1,
+      "b retail inc": 1,
+      "christ chapel": 1,
+      "prabhav business center": 1
     },
     "top_repeated_addresses": {
       "1795 westchester drive high point nc": 1,
@@ -78,7 +78,7 @@
   },
   "s2": {
     "source_name": "s2",
-    "n_rows": 15000,
+    "n_rows": 3000,
     "n_cols": 4,
     "columns": [
       "entity_id",
@@ -92,7 +92,7 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 15000,
+        "unique_count": 3000,
         "duplicate_count": 0
       },
       "business_name": {
@@ -100,16 +100,16 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 14963,
-        "duplicate_count": 37
+        "unique_count": 2998,
+        "duplicate_count": 2
       },
       "business_address": {
         "dtype": "str",
         "null_count": 0,
-        "empty_string_count": 509,
+        "empty_string_count": 105,
         "whitespace_only_count": 0,
-        "unique_count": 14488,
-        "duplicate_count": 512
+        "unique_count": 2896,
+        "duplicate_count": 104
       },
       "country": {
         "dtype": "str",
@@ -117,45 +117,45 @@
         "empty_string_count": 0,
         "whitespace_only_count": 0,
         "unique_count": 2,
-        "duplicate_count": 14998
+        "duplicate_count": 2998
       }
     },
     "country_distribution": {
-      "US": 9036,
-      "India": 5964
+      "US": 1818,
+      "India": 1182
     },
     "name_length_stats": {
-      "mean": 24.9916,
+      "mean": 25.061666666666667,
       "min": 2,
-      "max": 77,
-      "p50": 25.0,
+      "max": 72,
+      "p50": 24.0,
       "p95": 40.0
     },
     "address_length_stats": {
-      "mean": 46.16093333333333,
+      "mean": 46.33166666666666,
       "min": 0,
-      "max": 176,
+      "max": 158,
       "p50": 37.0,
-      "p95": 96.0
+      "p95": 95.04999999999973
     },
     "top_repeated_names": {
-      "   ": 751,
-      "    ": 225,
-      "  ": 211,
-      " ": 89,
-      "     ": 18
+      "   ": 149,
+      "  ": 38,
+      "    ": 37,
+      " ": 12,
+      "     ": 4
     },
     "top_repeated_addresses": {
-      "": 509,
-      "3176 lakemoor station way knoxville tn": 2,
-      "no28 chennai tamil nadu": 2,
-      "white house tilak road d1482 sadashiv peth pune maharashtra": 2,
-      "rittenhouse st washington dc": 2
+      "": 105,
+      "kh no 57013 new delhi west delhi delhi": 1,
+      "105 elm st morganton nc": 1,
+      "g3571 gulmohar colony bhopal madhya pradesh": 1,
+      "greensboro nc 19 12 stardust trail": 1
     }
   },
   "s3": {
     "source_name": "s3",
-    "n_rows": 15000,
+    "n_rows": 3000,
     "n_cols": 4,
     "columns": [
       "entity_id",
@@ -169,7 +169,7 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 15000,
+        "unique_count": 3000,
         "duplicate_count": 0
       },
       "business_name": {
@@ -177,16 +177,16 @@
         "null_count": 0,
         "empty_string_count": 0,
         "whitespace_only_count": 0,
-        "unique_count": 14959,
-        "duplicate_count": 41
+        "unique_count": 2998,
+        "duplicate_count": 2
       },
       "business_address": {
         "dtype": "str",
         "null_count": 0,
-        "empty_string_count": 523,
+        "empty_string_count": 113,
         "whitespace_only_count": 0,
-        "unique_count": 14467,
-        "duplicate_count": 533
+        "unique_count": 2887,
+        "duplicate_count": 113
       },
       "country": {
         "dtype": "str",
@@ -194,40 +194,40 @@
         "empty_string_count": 0,
         "whitespace_only_count": 0,
         "unique_count": 2,
-        "duplicate_count": 14998
+        "duplicate_count": 2998
       }
     },
     "country_distribution": {
-      "US": 8917,
-      "India": 6083
+      "US": 1781,
+      "India": 1219
     },
     "name_length_stats": {
-      "mean": 25.164066666666667,
+      "mean": 25.072,
       "min": 2,
       "max": 79,
       "p50": 25.0,
-      "p95": 42.0
+      "p95": 41.0
     },
     "address_length_stats": {
-      "mean": 46.80566666666667,
+      "mean": 46.143,
       "min": 0,
-      "max": 170,
+      "max": 157,
       "p50": 42.0,
-      "p95": 91.0
+      "p95": 89.0
     },
     "top_repeated_names": {
-      "   ": 443,
-      "    ": 117,
-      "  ": 110,
-      " ": 44,
-      "     ": 9
+      "   ": 94,
+      "  ": 35,
+      "    ": 18,
+      " ": 10,
+      "  limited": 2
     },
     "top_repeated_addresses": {
-      "": 523,
+      "": 113,
       "226 bakersville north carolina": 2,
-      "900 tucker way granbury texas": 2,
-      "3 mumbai mh": 2,
-      "4607 odessa pl indian trail north carolina": 2
+      "mack rd haltom city texas": 1,
+      "5780 fawn ct fort worth texas": 1,
+      "1 ivanhoe ave po box 6009 cincinnati ohio": 1
     }
   }
 }
